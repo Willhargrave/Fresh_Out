@@ -1,16 +1,6 @@
 class HouseFoodsController < ApplicationController
   def index
-<<<<<<< HEAD
-    @house_foods = policy_scope(HouseFood)
-    @foods = HouseFood.all
-    @house = House.find(2)
-    # Changed it to 2 to test out something can return to 1 if you want
-=======
-    # pundit thing
     @foods = policy_scope(HouseFood)
-    # authorize @foods
-
->>>>>>> 08ecd8a5c380339bb11924b5e58c32b6771996ac
   end
 
   def show
